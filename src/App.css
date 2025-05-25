@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: #F5F5F5;
+
 }
 
 .logo {
@@ -40,3 +42,76 @@
 .read-the-docs {
   color: #888;
 }
+/* 
+my work 
+*/
+* {
+  box-sizing: border-box;
+}
+
+.card_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 16px;
+  width: 314px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.pill {
+  border-radius: 4px;
+  background-color: rgba(223, 168, 116, 0.2);
+  padding: 4px 6px;
+  color: #dfa874;
+  margin-bottom: 4px;
+}
+
+.card_1 h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card_1 p {
+  color: #787486;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.card-footer {
+  color: #787486;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-footer-images {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-shrink: 0;
+}
+
+.card-footer-images img {
+  margin-left: -5px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.comment,
+.file {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.dots {
+  top: 28px;
+  right: 20px;
+  position: absolute;
+}
+
