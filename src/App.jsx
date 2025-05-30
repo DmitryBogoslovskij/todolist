@@ -23,25 +23,67 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card_1">
-        <div className="pill">Low</div>
-        <h3>Brainstorming</h3>
-        <p>Brainstorming brings team members' diverse experience into play.</p>
-        <div className="card-footer">
-          <div className="card-footer-images">
-            <img src={Ellipse15} alt="" />
-            <img src={Ellipse13} alt="" />
-            <img src={Ellipse12} alt="" />
+      <div className="panel_1">
+        <div className="card_1">
+          <div className="pill">Low</div>
+          <h3>Brainstorming</h3>
+          <p>Brainstorming brings team members' diverse experience into play.</p>
+          <div className="card-footer">
+            <div className="card-footer-images">
+              <img src={Ellipse15} alt="" />
+              <img src={Ellipse13} alt="" />
+              <img src={Ellipse12} alt="" />
+            </div>
+            <div className="comment">
+              <img src={Comment} alt="" />
+              12 comments
+            </div>
+            <div className="file">
+              <img src={File} alt="" />0 files
+            </div>
           </div>
-          <div className="comment">
-            <img src={Comment} alt="" />
-            12 comments
+          <img className="dots" src={Dots} alt="" />
+        </div>            
+        <div className="card_1">
+          <div className="pill">Low</div>
+          <h3>Brainstorming</h3>
+          <p>Brainstorming brings team members' diverse experience into play.</p>
+          <div className="card-footer">
+            <div className="card-footer-images">
+              <img src={Ellipse15} alt="" />
+              <img src={Ellipse13} alt="" />
+              <img src={Ellipse12} alt="" />
+            </div>
+            <div className="comment">
+              <img src={Comment} alt="" />
+              12 comments
+            </div>
+            <div className="file">
+              <img src={File} alt="" />0 files
+            </div>
           </div>
-          <div className="file">
-            <img src={File} alt="" />0 files
+          <img className="dots" src={Dots} alt="" />
+        </div> 
+        <div className="card_1">
+          <div className="pill">Low</div>
+          <h3>Brainstorming</h3>
+          <p>Brainstorming brings team members' diverse experience into play.</p>
+          <div className="card-footer">
+            <div className="card-footer-images">
+              <img src={Ellipse15} alt="" />
+              <img src={Ellipse13} alt="" />
+              <img src={Ellipse12} alt="" />
+            </div>
+            <div className="comment">
+              <img src={Comment} alt="" />
+              12 comments
+            </div>
+            <div className="file">
+              <img src={File} alt="" />0 files
+            </div>
           </div>
+          <img className="dots" src={Dots} alt="" />
         </div>
-        <img className="dots" src={Dots} alt="" />
       </div>   
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

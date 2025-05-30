@@ -3,8 +3,6 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: #F5F5F5;
-
 }
 
 .logo {
@@ -49,11 +47,20 @@ my work
   box-sizing: border-box;
 }
 
+.panel_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+  background: #F5F5F5;
+  padding: 20px;
+}
+
 .card_1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: white;
+  background: white;
   border-radius: 16px;
   width: 314px;
   margin: auto;
