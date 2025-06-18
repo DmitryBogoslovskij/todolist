@@ -9,15 +9,13 @@ import Ellipse13 from "./images/Ellipse 13.png"
 import Ellipse15 from "./images/Ellipse 15.png"
 import Ellipse121 from "./images/Ellipse 12 (1).png"
 import Ellipse131 from "./images/Ellipse 13 (1).png"
-import Comment from "./images/comment.svg"
-import File from "./images/file.svg"
-import Dots from "./images/dots.svg"
+import { TodoCard } from './components/TodoCard'
 
 function App() {
   const [count, setCount] = useState(0)
   
   return (
-    <>
+    <>  
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -39,66 +37,24 @@ function App() {
           <div className="square">
             <img src={Plus} alt="" />
           </div>           
-        </div> 
-        <div className="card_1">
-          <div className="pill">Low</div>
-          <h3>Brainstorming</h3>
-          <p>Brainstorming brings team members' diverse experience into play.</p>
-          <div className="card-footer">
-            <div className="card-footer-images">
-              <img src={Ellipse15} alt="" />
-              <img src={Ellipse13} alt="" />
-              <img src={Ellipse12} alt="" />
-            </div>
-            <div className="comment">
-              <img src={Comment} alt="" />
-              12 comments
-            </div>
-            <div className="file">
-              <img src={File} alt="" />0 files
-            </div>
-          </div>
-          <img className="dots" src={Dots} alt="" />
         </div>            
-        <div className="card_1">
-          <div className="pill">High</div>
-          <h3>Research</h3>
-          <p>User research helps you to create an optimal product for users.</p>
-          <div className="card-footer">
-            <div className="card-footer-images">
-              <img src={Ellipse121} alt="" />
-              <img src={Ellipse131} alt="" />
-            </div>
-            <div className="comment">
-              <img src={Comment} alt="" />
-              10 comments
-            </div>
-            <div className="file">
-              <img src={File} alt="" />3 files
-            </div>
-          </div>
-          <img className="dots" src={Dots} alt=""/>
-        </div> 
-        <div className="card_1">
-          <div className="pill">High</div>
-          <h3>Wireframes</h3>
-          <p>Low fidelity wireframes include the most basic content and visuals.</p>
-          <div className="card-footer">
-            <div className="card-footer-images">
-              <img src={Ellipse13} alt="" />
-              <img src={Ellipse131} alt="" />
-              <img src={Ellipse12} alt="" />
-            </div>
-            <div className="comment">
-              <img src={Comment} alt="" />
-              12 comments
-            </div>
-            <div className="file">
-              <img src={File} alt="" />0 files
-            </div>
-          </div>
-          <img className="dots" src={Dots} alt="" />
-        </div>
+        <TodoCard title="Brainstorming" 
+        description="Brainstorming brings team members' diverse experience into play."  images = {[
+          Ellipse15,
+          Ellipse13,
+          Ellipse12
+        ]}/>
+        <TodoCard title="Research" 
+        description="User research helps you to create an optimal product for users." images = {[
+          Ellipse121,
+          Ellipse131
+        ]}/>
+        <TodoCard title="Wireframes" 
+        description="Low fidelity wireframes include the most basic content and visuals." images = {[
+          Ellipse13,
+          Ellipse131,
+          Ellipse12
+        ]}/>
       </div>   
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -116,4 +72,5 @@ function App() {
 }
 
 export default App
+
       
